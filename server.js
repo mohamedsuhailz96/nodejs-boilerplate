@@ -56,7 +56,7 @@ function onError(error) {
 
 function onListening() {
 
-  console.log('Server is listening on port no :' + port);
+  console.log('---Server is listening on port no :' + port+'---');
   
 
   var addr = server.address();

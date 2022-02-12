@@ -4,10 +4,9 @@ const express = require('express');
 var cors = require('cors');
 require('./data/models');
 
-//var testRouter = './routes/testRouterConfig.js';
+let usersRouter = require('./routes/userRoutes');
 
 const app = express();
-
 
 app.use(cors());
 app.options('*', cors());
@@ -17,7 +16,7 @@ app.use(express.urlencoded({
 }));
 app.use(express.Router());
 
-//executeRouter(app, testRouter);
+app.use('/users',usersRouter);
 
 app.use(function (req, res, next) {
     next(createError(404, `Path '${req.url}' Not Found !!`));
@@ -30,7 +29,6 @@ app.use(function (err, req, res, next) {
         .json({
             status: e.status,
             success: false,
-            message,
             error: e.name + "  : " + e.message
         })
         .end();
@@ -38,7 +36,6 @@ app.use(function (err, req, res, next) {
 });
 
 process.on('unhandledRejection', function (reason, p) {
-
     console.log("Possibly Unhandled Rejection at: Promise ", p, " reason: ", reason);
 });
 
