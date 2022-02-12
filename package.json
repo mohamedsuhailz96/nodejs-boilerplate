@@ -11,7 +11,7 @@
   },
   "name": "nodejs-boilerplate-sequelize",
   "description": "Basic boilerplate for Node.js server application with Sequelize as ORM",
-  "version": "1.5.0",
+  "version": "1.6.0",
   "main": "server.js",
   "scripts": {
     "test": "mocha",

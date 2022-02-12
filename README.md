@@ -1,14 +1,18 @@
-# nodejs-boilerplate
+# nodejs-boilerplate-sequelize
 Basic boilerplate for Node.js server application with Sequelize ORM and PostgreSQL DB 
 # Pre-requisites
 1) Node.js latest version with npm & npx
 2) PostgreSQL v13+
 # Installing Dependencies
-1) After cloning the repo, run 
+1) To install the boilerplate globally, run 
 ```bash
-npm install
+npm i -g nodejs-boilerplate-sequelize
 ```
-2) Create a ".env" file in the project's root and copy the contents of "example.env" file and replace the values.
+2) You can use the following command in any directory to generate the project folder structure
+```bash
+npx generate-boilerplate app-name
+```
+3) Create a ".env" file in the project's root and copy the contents of "example.env" file and replace the values.
 # Project Folder Structure
 1) Starting point of the application is "server.js". The command "npm start" runs "node server.js" script.
 2) "server.js" defines the creation of application server using in-built "http" module. It takes Port Number from the "PORT" variable in .env file and binds it to the server.
