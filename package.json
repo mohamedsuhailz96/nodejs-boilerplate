@@ -11,7 +11,7 @@
   },
   "name": "nodejs-boilerplate-sequelize",
   "description": "Basic boilerplate for Node.js server application with Sequelize as ORM",
-  "version": "1.6.0",
+  "version": "1.7.0",
   "main": "server.js",
   "scripts": {
     "test": "mocha",
@@ -35,6 +35,7 @@
   "homepage": "https://github.com/mohamedsuhailz96/nodejs-boilerplate#readme",
   "devDependencies": {
     "nodemon": "^2.0.15",
+    "rimraf": "^3.0.2",
     "sequelize-cli": "^6.4.1"
   },
   "bin": {
