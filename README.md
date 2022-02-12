@@ -22,8 +22,6 @@ npm install
    |       
    |--data
    |       |--config
-   |       |--dataServices
-   |       |       |--userDataServices
    |       |--migrations
    |       |--models
    |       |--seeders
