@@ -13,6 +13,14 @@ npm i -g nodejs-boilerplate-sequelize
 npx generate-boilerplate app-name
 ```
 3) Create a ".env" file in the project's root and copy the contents of "example.env" file and replace the values.
+4) To start the server locally, run
+```bash
+npm start
+```
+5) To start the server in development mode, run
+```bash
+npm restart
+```
 # Project Folder Structure
 1) Starting point of the application is "server.js". The command "npm start" runs "node server.js" script.
 2) "server.js" defines the creation of application server using in-built "http" module. It takes Port Number from the "PORT" variable in .env file and binds it to the server.
