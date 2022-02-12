@@ -9,7 +9,7 @@
     "pg-hstore": "^2.3.4",
     "sequelize": "^6.16.1"
   },
-  "name": "nodejs-boilerplate",
+  "name": "nodejs-boilerplate-sequelize",
   "description": "Basic boilerplate for Node.js server application with Sequelize as ORM",
   "version": "1.0.0",
   "main": "server.js",
@@ -36,5 +36,8 @@
   "devDependencies": {
     "nodemon": "^2.0.15",
     "sequelize-cli": "^6.4.1"
+  },
+  "bin": {
+    "generate-boilerplate": "./generate-boilerplate.js"
   }
 }
